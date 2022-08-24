@@ -32,5 +32,8 @@
 }
 
 body {
-    background-color: rgb(32, 64, 92);
+    background-color: rgb(0, 22, 65);
+    /* background-image: url("Cherry_tree.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
