@@ -25,9 +25,9 @@ body {
 }
 
 #nameContainer {
+    position: relative;
     display: block;
-    /* position: relative; */
-    height: 90%;
+    height: 100%;
     background: rgb(30,67,97);
     background: linear-gradient(180deg, rgb(21, 48, 70) 0%, rgba(6,15,22,1) 100%); 
     /* background-image: url("night\ bg.jpg"); */
@@ -38,7 +38,7 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0;
+    top: -40px;
     left: 0;
 
     display: block;
