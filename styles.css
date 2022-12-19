@@ -53,7 +53,7 @@ body {
     height: 100%;
     position: absolute;
     top: -40px;
-    left: 300px;
+    left: 15%;
 
     display: block;
     font-family: monospace;
@@ -67,7 +67,8 @@ body {
     display: block;
     font-family: monospace;
     text-align: left;
-    left: 300px;
+    left: 15%;
+    right: 15%;
     line-height: 30px;
     margin-top: 460px;
     color: rgb(182, 182, 182);
