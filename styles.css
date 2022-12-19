@@ -98,8 +98,26 @@ body {
     max-width: 100%;
     overflow: hidden;
     height: 1000px;
-    background: rgb(5,21,23);
-    background: linear-gradient(180deg, rgba(5,21,23,1) 0%, rgba(17,51,69,1) 100%); 
+    /* background-image: url("clouds.jpg"); */
+    background: rgb(201,168,162);
+    background: linear-gradient(0deg, rgba(201,168,162,1) 0%, rgba(132,132,145,1) 24%, rgba(23,33,38,1) 100%); 
+    background-attachment: fixed;
+    /* background: rgb(5,21,23); */
+    /* background: linear-gradient(180deg, rgba(5,21,23,1) 0%, rgba(17,51,69,1) 100%);  */
+}
+
+#sunsetStars {
+    /* border: 10px red solid; */
+    width:10000px;
+	height: 100%;
+    background: url("sunset-stars.png");
+    background-attachment: fixed;
+    background-size: 1000px 1000px;
+    position: relative;
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    height: 1000px;
 }
 
 .spinner {
@@ -156,24 +174,26 @@ body {
 	height: 100%;
 	background: url("stars.jpg");
 	background-size: 1000px 1000px;
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: -2;
+    z-index: -3;
+    background-attachment: fixed;
 	
 }
 
 .twinkling{
 	width:10000px;
 	height: 100%;
+    background-attachment: fixed;
 	background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
 	background-size: 1000px 1000px;
     position: fixed;
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: -2;
     
     animation:move-background 70s linear infinite
 	
