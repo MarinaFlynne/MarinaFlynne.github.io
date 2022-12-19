@@ -99,8 +99,8 @@ body {
     overflow: hidden;
     height: 1000px;
     /* background-image: url("clouds.jpg"); */
-    background: rgb(201,168,162);
-    background: linear-gradient(0deg, rgba(201,168,162,1) 0%, rgba(132,132,145,1) 24%, rgba(23,33,38,1) 100%); 
+    background: rgb(172,143,138);
+    background: linear-gradient(0deg, rgba(172,143,138,1) 0%, rgba(79,83,88,1) 14%, rgba(12,18,20,1) 87%); 
     background-attachment: fixed;
     /* background: rgb(5,21,23); */
     /* background: linear-gradient(180deg, rgba(5,21,23,1) 0%, rgba(17,51,69,1) 100%);  */
