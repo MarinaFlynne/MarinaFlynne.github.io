@@ -27,10 +27,12 @@ body {
 #nameContainer {
     position: relative;
     display: block;
+    max-width: 100%;
+    overflow: hidden;
     height: 100%;
     background: rgb(30,67,97);
     background: linear-gradient(180deg, rgb(21, 48, 70) 0%, rgba(6,15,22,1) 100%); 
-    /* background-image: url("night\ bg.jpg"); */
+    background-image: url("Stars.jpg");
     background-size: cover;
 }
 
@@ -98,3 +100,29 @@ body {
         transform: rotate(360deg);
     }
 }
+
+.twinkling{
+	width:10000px;
+	height: 100%;
+	background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+	background-size: 1000px 1000px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    
+    animation:move-background 70s linear infinite
+	
+}
+
+@keyframes move-background {
+    from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+
+html, body { margin: 0; padding: 0; } 
