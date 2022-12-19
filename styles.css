@@ -41,20 +41,21 @@ body {
     height: 100%;
     position: absolute;
     top: -40px;
-    left: 0;
+    left: 300px;
 
     display: block;
     font-family: monospace;
     font-size: 50pt;
     margin-top: 320px;
     color: white;
-    text-align: center;
+    text-align: left;
 }
 
 #nameDescription {
     display: block;
     font-family: monospace;
-    text-align: center;
+    text-align: left;
+    left: 300px;
     line-height: 30px;
     margin-top: 460px;
     color: rgb(182, 182, 182);
