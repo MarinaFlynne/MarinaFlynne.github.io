@@ -5,6 +5,7 @@ body {
 }
 
 body {
+  min-width: 1500px;
   background-color: rgb(26, 26, 26);
 
   /* fade in on page load */
@@ -20,6 +21,31 @@ body {
   position: relative;
   padding: 0px;
   height: 1000px;
+}
+
+.content-box-container {
+    /* display: inline-block; */
+    border-radius: 20px;
+    width: 500px;
+    height: 700px;
+    z-index: 20;
+    
+    margin-top: 100px;
+    background: rgb(68, 125, 148);
+    position: relative;
+}
+
+.content-box-title {
+    top: 20px;
+    /* background: rgb(62, 62, 75); */
+    position: absolute;
+    display:block;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20pt;
+    color: white;
+    width: 100%;
+    height: 20px;
 }
 
 .spinner {
@@ -95,7 +121,8 @@ body {
 .twinkling {
   width: 10000px;
   height: 100%;
-  background-attachment: fixed;
+  position: fixed;
+  /* background-attachment: fixed; */
   background: transparent
     url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png")
     repeat;
@@ -145,6 +172,17 @@ body {
   text-align: left;
 }
 
+h1 {
+  position: absolute;
+  left: 15%;
+  display: block;
+  font-family: monospace;
+  font-size: 50pt;
+  color: white;
+  text-align: left;
+  text-shadow: 2px 2px #9d02c4;
+}
+
 #name-desc {
   display: block;
   font-family: monospace;
@@ -154,6 +192,24 @@ body {
   line-height: 30px;
   margin-top: 460px;
   color: rgb(182, 182, 182);
+}
+
+h2 {
+  position: absolute;
+  left: 15%;
+  display: block;
+  font-family: monospace;
+  color: rgb(182, 182, 182);
+  text-align: left;
+}
+
+#about-me-title {
+  top: 140px;
+}
+
+#about-me-desc {
+  top:280px;
+  width: 40%;
 }
 
 #spinner-container {
@@ -169,24 +225,42 @@ body {
   display: block;
   max-width: 100%;
   overflow: hidden;
-  height: 1000px;
-  background: rgb(201, 168, 162);
-  background: linear-gradient(
-    0deg,
-    rgba(201, 168, 162, 1) 0%,
-    rgba(132, 132, 145, 1) 15%,
-    rgba(12, 18, 20, 1) 95%
-  );
+  height: 900px;
+  
+  /* background: url("stars.jpg"); */
   background-attachment: fixed;
+
+  /* padding-left: 15%;
+  padding-top: 15%;
+  padding-right: 15%;
+  padding-left: 15%; */
+}
+
+#skills {
+    float: right;
+    margin-right: 10%;
+}
+
+#about-me {
+    float: left;
+    margin-left: 10%;
 }
 
 #sunsetStars {
   width: 10000px;
   height: 100%;
-  background: url("sunset-stars.png");
-  background-attachment: fixed;
+  /* background: rgb(201, 168, 162);
+  background: linear-gradient(
+    0deg,
+    rgba(201, 168, 162, 1) 0%,
+    rgba(132, 132, 145, 1) 15%,
+    rgba(12, 18, 20, 1) 95%
+  ); */
+  background: rgb(194,92,74);
+  background: linear-gradient(0deg, rgba(194,92,74,1) 0%, rgba(199,114,41,1) 10%, rgba(48,85,129,0.7859551933374298) 41%, rgba(0,32,70,0.5387641821014747) 100%); 
+  /* background-attachment: fixed; */
   background-size: 1000px 1000px;
-  position: relative;
+  position: absolute;
   display: block;
   max-width: 100%;
   overflow: hidden;
