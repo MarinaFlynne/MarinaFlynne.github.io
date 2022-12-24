@@ -5,7 +5,7 @@ body {
 }
 
 body {
-  min-width: 1500px;
+  min-width: 800px;
   background-color: rgb(26, 26, 26);
 
   /* fade in on page load */
@@ -13,7 +13,6 @@ body {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
-
 
 /* Classes: */
 
@@ -24,28 +23,28 @@ body {
 }
 
 .content-box-container {
-    /* display: inline-block; */
-    border-radius: 20px;
-    width: 500px;
-    height: 700px;
-    z-index: 20;
-    
-    margin-top: 100px;
-    background: rgb(68, 125, 148);
-    position: relative;
+  /* display: inline-block; */
+  border-radius: 20px;
+  width: 500px;
+  height: 700px;
+  z-index: 20;
+
+  margin-top: 100px;
+  background: rgb(68, 125, 148);
+  position: relative;
 }
 
 .content-box-title {
-    top: 20px;
-    /* background: rgb(62, 62, 75); */
-    position: absolute;
-    display:block;
-    text-align: center;
-    font-family: monospace;
-    font-size: 20pt;
-    color: white;
-    width: 100%;
-    height: 20px;
+  top: 20px;
+  /* background: rgb(62, 62, 75); */
+  position: absolute;
+  display: block;
+  text-align: center;
+  font-family: monospace;
+  font-size: 20pt;
+  color: white;
+  width: 100%;
+  height: 20px;
 }
 
 .spinner {
@@ -136,7 +135,6 @@ body {
   animation: move-background 70s linear infinite;
 }
 
-
 /* IDs: */
 
 #name,
@@ -174,7 +172,6 @@ body {
 
 h1 {
   position: absolute;
-  left: 15%;
   display: block;
   font-family: monospace;
   font-size: 50pt;
@@ -196,20 +193,55 @@ h1 {
 
 h2 {
   position: absolute;
-  left: 15%;
   display: block;
   font-family: monospace;
   color: rgb(182, 182, 182);
   text-align: left;
+  font-size: 24px;
+}
+
+h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+li {
+  margin-left: 60px;
+}
+
+ul {
+  padding: 0;
 }
 
 #about-me-title {
-  top: 240px;
+  left: 15%;
+  top: 180px;
 }
 
 #about-me-desc {
-  top:380px;
+  left: 15%;
+  top: 320px;
   width: 40%;
+}
+
+#skills-list-container {
+  float: right;
+  right: 15%;
+  top: 180px;
+  font-family: monospace;
+  color: rgb(182, 182, 182);
+  text-align: left;
+  font-size: 24px;
+  width: 300px;
+
+  position: absolute;
+  z-index: 5;
+}
+#skills-list {
+  text-align: left;
+  position:absolute;
+  margin-top: 45;
+  top: 120px;
 }
 
 #spinner-container {
@@ -226,7 +258,7 @@ h2 {
   max-width: 100%;
   overflow: hidden;
   height: 900px;
-  
+
   /* background: url("stars.jpg"); */
   background-attachment: fixed;
 
@@ -236,14 +268,9 @@ h2 {
   padding-left: 15%; */
 }
 
-#skills {
-    float: right;
-    margin-right: 10%;
-}
-
 #about-me {
-    float: left;
-    margin-left: 10%;
+  float: left;
+  margin-left: 10%;
 }
 
 #sunsetStars {
@@ -256,8 +283,14 @@ h2 {
     rgba(132, 132, 145, 1) 15%,
     rgba(12, 18, 20, 1) 95%
   ); */
-  background: rgb(194,92,74);
-  background: linear-gradient(0deg, rgba(194,92,74,1) 0%, rgba(199,114,41,1) 10%, rgba(48,85,129,0.7859551933374298) 41%, rgba(0,32,70,0.5387641821014747) 100%); 
+  background: rgb(194, 92, 74);
+  background: linear-gradient(
+    0deg,
+    rgba(194, 92, 74, 1) 0%,
+    rgba(199, 114, 41, 1) 10%,
+    rgba(48, 85, 129, 0.7859551933374298) 41%,
+    rgba(0, 32, 70, 0.5387641821014747) 100%
+  );
   /* background-attachment: fixed; */
   background-size: 1000px 1000px;
   position: absolute;
@@ -281,17 +314,17 @@ h2 {
 
 /* for fading in the entire page */
 @keyframes fadeInAnimation {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+}
 
-  /* for spinner */
-  @keyframes spin {
-    to {
-      transform: rotate(360deg);
-    }
+/* for spinner */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
+}
