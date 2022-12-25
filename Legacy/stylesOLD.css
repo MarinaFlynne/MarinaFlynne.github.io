@@ -1,0 +1,330 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 800px;
+    background-color: rgb(26, 26, 26);
+
+    /* fade in on page load */
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+/* Classes: */
+
+.main-container {
+    position: relative;
+    padding: 0px;
+    height: 1000px;
+}
+
+.content-box-container {
+    /* display: inline-block; */
+    border-radius: 20px;
+    width: 500px;
+    height: 700px;
+    z-index: 20;
+
+    margin-top: 100px;
+    background: rgb(68, 125, 148);
+    position: relative;
+}
+
+.content-box-title {
+    top: 20px;
+    /* background: rgb(62, 62, 75); */
+    position: absolute;
+    display: block;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20pt;
+    color: white;
+    width: 100%;
+    height: 20px;
+}
+
+.spinner {
+    background-color: purple;
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    background: rgb(212, 113, 113);
+    background: conic-gradient(
+        rgba(212, 113, 113, 1) 0%,
+        rgba(215, 161, 106, 1) 17%,
+        rgba(188, 204, 103, 1) 34%,
+        rgba(103, 204, 110, 1) 50%,
+        rgba(90, 137, 219, 1) 68%,
+        rgba(167, 60, 207, 1) 85%,
+        rgba(212, 113, 113, 1) 100%
+    );
+    position: relative;
+    animation: spin 1.5s linear infinite;
+    box-shadow: 0px 0px 150px -75px black;
+    border: 4px solid white;
+}
+
+.spinner::before {
+    content: "";
+    background-color: rgb(30, 51, 61);
+    /* background-image: url("20220110_111035.jpg"); */
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: inset 0px 0px 110px -70px black;
+    border: 4px solid white;
+}
+
+.rainbowBorder {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    z-index: 2;
+    background: rgb(23, 137, 147);
+
+    background: rgb(193, 43, 65);
+    background: linear-gradient(
+        90deg,
+        rgba(193, 43, 65, 1) 0%,
+        rgba(194, 136, 75, 1) 20%,
+        rgba(203, 198, 83, 1) 40%,
+        rgba(95, 204, 74, 1) 60%,
+        rgba(97, 100, 207, 1) 80%,
+        rgba(164, 74, 204, 1) 100%
+    );
+}
+
+.stars {
+    width: 10000px;
+    height: 100%;
+    background: url("stars.jpg") repeat;
+    background-size: 1000px 1000px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -3;
+    background-attachment: fixed;
+}
+
+.twinkling {
+    width: 10000px;
+    height: 100%;
+    position: fixed;
+    /* background-attachment: fixed; */
+    background: transparent
+        url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png")
+        repeat;
+    background-size: 1000px 1000px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -2;
+
+    animation: move-background 70s linear infinite;
+}
+
+/* IDs: */
+
+#name,
+#name-desc {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#name-container {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+#name {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -40px;
+    left: 15%;
+
+    display: block;
+    font-family: monospace;
+    font-size: 50pt;
+    margin-top: 320px;
+    color: white;
+    text-align: left;
+}
+
+h1 {
+    position: absolute;
+    display: block;
+    font-family: monospace;
+    font-size: 50pt;
+    color: white;
+    text-align: left;
+    text-shadow: 2px 2px #9d02c4;
+}
+
+#name-desc {
+    display: block;
+    font-family: monospace;
+    text-align: left;
+    left: 15%;
+    right: 15%;
+    line-height: 30px;
+    margin-top: 460px;
+    color: rgb(182, 182, 182);
+}
+
+h2 {
+    position: absolute;
+    display: block;
+    font-family: monospace;
+    color: rgb(182, 182, 182);
+    text-align: left;
+    font-size: 24px;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+li {
+    margin-left: 60px;
+}
+
+ul {
+    padding: 0;
+}
+
+#about-me-title {
+    left: 15%;
+    top: 180px;
+}
+
+#about-me-desc {
+    left: 15%;
+    top: 320px;
+    width: 40%;
+}
+
+#skills-list-container {
+    float: right;
+    right: 15%;
+    top: 180px;
+    font-family: monospace;
+    color: rgb(182, 182, 182);
+    text-align: left;
+    font-size: 24px;
+    width: 300px;
+
+    position: absolute;
+    z-index: 5;
+}
+#skills-list {
+    text-align: left;
+    position: absolute;
+    margin-top: 45;
+    top: 120px;
+}
+
+#spinner-container {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1200px;
+    z-index: 4;
+    position: absolute;
+}
+
+#about-me-container {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    height: 900px;
+
+    /* background: url("stars.jpg"); */
+    background-attachment: fixed;
+
+    /* padding-left: 15%;
+  padding-top: 15%;
+  padding-right: 15%;
+  padding-left: 15%; */
+}
+
+#about-me {
+    float: left;
+    margin-left: 10%;
+}
+
+#sunsetStars {
+    width: 10000px;
+    height: 100%;
+    /* background: rgb(201, 168, 162);
+  background: linear-gradient(
+    0deg,
+    rgba(201, 168, 162, 1) 0%,
+    rgba(132, 132, 145, 1) 15%,
+    rgba(12, 18, 20, 1) 95%
+  ); */
+    background: rgb(194, 92, 74);
+    background: linear-gradient(
+        0deg,
+        rgba(194, 92, 74, 1) 0%,
+        rgba(199, 114, 41, 1) 10%,
+        rgba(48, 85, 129, 0.7859551933374298) 41%,
+        rgba(0, 32, 70, 0.5387641821014747) 100%
+    );
+    /* background-attachment: fixed; */
+    background-size: 1000px 1000px;
+    position: absolute;
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    height: 1000px;
+}
+
+/* Keyframes: */
+
+/* for the twinkling star effect */
+@keyframes move-background {
+    from {
+        -webkit-transform: translate3d(0px, 0px, 0px);
+    }
+    to {
+        -webkit-transform: translate3d(1000px, 0px, 0px);
+    }
+}
+
+/* for fading in the entire page */
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* for spinner */
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
