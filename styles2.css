@@ -148,6 +148,9 @@ p {
     width: 10000px;
     position: fixed;
     height:100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
 
     background: transparent
         url("twinkling.png")
@@ -215,7 +218,6 @@ p {
     background-image: url('email.png');
     width: 20px;
     height: 20px;
-    /* margin-bottom: 5px; */
     margin-right: 10px;
 }
 
