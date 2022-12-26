@@ -5,9 +5,9 @@ body {
 }
 
 body {
-    /* min-width: 800px; */
+    min-width: 800px;
     background-color: rgb(26, 26, 26);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 
     /* fade in on page load */
     /* animation: fadeInAnimation ease 1s;
