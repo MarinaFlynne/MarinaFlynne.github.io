@@ -301,7 +301,7 @@ p {
     flex-wrap: wrap;
     justify-content: space-evenly;
 
-    background: rgba(16, 22, 70, 0.8);
+    background: rgba(16, 22, 70, 0.7);
     /* background: linear-gradient(90deg, rgba(16,22,70,0.8) 0%, rgba(50,16,70,0.8) 100%);   */
     margin: auto;
     width: 80%;
@@ -320,8 +320,8 @@ p {
     background: rgb(16, 22, 70);
     background: linear-gradient(
         180deg,
-        rgba(16, 22, 70, 0.8) 0%,
-        rgba(58, 16, 70, 0.8) 100%
+        rgba(16, 22, 70, 0.7) 0%,
+        rgba(58, 16, 70, 0.7) 100%
     );
     border: 5px solid rgb(32, 36, 46);
     border-top: none;
