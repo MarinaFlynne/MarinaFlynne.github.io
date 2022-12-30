@@ -339,6 +339,8 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* align-items: center; */
+    /* align-content: flex-start; */
     width: 100%;
     height: auto;
     gap: 50px;
