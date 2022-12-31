@@ -257,7 +257,7 @@ p {
     height: 25px;
     background-color: rgb(151, 200, 209);
     margin: 0 0 0 0;
-    font-family: monospace;
+    font-family: var(--p-font);
     color: rgb(0, 0, 0);
     text-align: left;
     font-size: 12pt;
