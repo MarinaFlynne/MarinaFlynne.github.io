@@ -1,3 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@500&display=swap');
+
+:root {
+    --header-font: 'Lexend', sans-serif;
+    --p-font: 'Lexend', sans-serif;
+}
+
 html,
 body {
     margin: 0;
@@ -17,7 +25,7 @@ body {
 h1 {
     text-align: center;
     margin: 0 0 20px 0;
-    font-family: monospace;
+    font-family: var(--header-font);
     font-size: 50pt;
     color: white;
     /* text-align: left; */
@@ -26,7 +34,7 @@ h1 {
 
 h2 {
     margin: 0 0 0 0;
-    font-family: monospace;
+    font-family: var(--header-font);
     font-size: 20pt;
     color: rgb(182, 182, 182);
     text-shadow: #000000 1px 0 10px;
@@ -35,7 +43,7 @@ h2 {
 
 h3 {
     margin: 0 0 0 0;
-    font-family: monospace;
+    font-family: var(--header-font);
     font-size: 20pt;
     color: rgb(224, 224, 224);
     text-align: left;
@@ -43,7 +51,7 @@ h3 {
 
 ul {
     margin: 0 0 0 0;
-    font-family: monospace;
+    font-family: var(--p-font);
     font-size: 18pt;
     color: rgb(182, 182, 182);
     text-align: left;
@@ -52,7 +60,7 @@ ul {
 
 p {
     margin: 0 0 0 0;
-    font-family: monospace;
+    font-family: var(--p-font);
     color: rgb(182, 182, 182);
     text-align: left;
     font-size: 24px;
@@ -109,7 +117,7 @@ p {
     color: rgb(182, 182, 182);
     cursor: pointer;
     display: inline-block;
-    font-family: monospace;
+    font-family: var(--p-font);
     font-size: 16px;
     font-weight: 600;
     line-height: normal;
@@ -190,7 +198,7 @@ p {
 
 .name-header {
     margin: 0 0 20px 0;
-    font-family: monospace;
+    font-family: var(--header-font);
     font-size: 50pt;
     color: white;
     text-align: left;
